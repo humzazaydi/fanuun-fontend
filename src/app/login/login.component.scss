@@ -1,0 +1,44 @@
+  mat-card-title{
+    color:#ED1C2A;
+  }
+  mat-form-field{
+    width: 100%
+  }
+
+  .btn-signIn.mat-mdc-raised-button{
+    background-color:#ED1C2A !important;
+    width: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  mat-card-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  mat-card-content{
+    margin-top: 5%;
+  }
+
+  .login-card {
+    max-width: 400px;
+    height: 350px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    margin: auto;
+  }
+  
+  .main-div {
+    background-color: #060056;
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+  }

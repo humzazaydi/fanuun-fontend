@@ -1,31 +1,38 @@
 <div class="main-div">
+  <mat-card class="login-card">
+    <mat-card-header style="margin: 0px auto">
+      <mat-card-title> Sign in to Your Account </mat-card-title>
+    </mat-card-header>
 
-    <mat-card class="login-card">
-        <mat-card-header style="margin: 0px auto;">
-            <mat-card-title>
-                Sign in to Your Account
-            </mat-card-title>
-        </mat-card-header>
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Username" />
+      </mat-form-field>
 
-        <mat-card-content>
-            <mat-form-field appearance="outline">
-                <mat-label>Enter username</mat-label>
-                <input matInput placeholder="Enter username">
-            </mat-form-field>
-
-            <mat-form-field appearance="outline">
-                <mat-label>Enter your password</mat-label>
-                <input matInput [type]="hide ? 'password' : 'text'">
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                    [attr.aria-pressed]="hide">
-                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                </button>
-            </mat-form-field>
-            <mat-card-actions>
-                <button mat-raised-button class="btn-signIn">Sign in</button>
-            </mat-card-actions>
-
-        </mat-card-content>
-    </mat-card>
-
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+      </mat-form-field>
+      <mat-card-actions>
+        <button mat-raised-button class="btn-signIn">Sign in</button>
+      </mat-card-actions>
+      <p class="forget-password-label">
+        <a [routerLink]="['/forget-password']">Forget Password?</a>
+      </p>
+      <p class="register-here-account-label">
+        Don't have an account?
+        <a [routerLink]="['/register-customer']" class="register-here">Register here as a customer</a>
+      </p>
+    </mat-card-content>
+  </mat-card>
 </div>

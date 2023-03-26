@@ -1,0 +1,69 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <div class="example-button-row">
+      <button mat-fab extended color="primary">
+        Primary
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-grid-list cols="2" rowHeight="6:1">
+  <mat-grid-tile>
+    <mat-form-field>
+      <mat-label>Search</mat-label>
+      <input
+        matInput
+        (keyup)="applyFilter($event)"
+        placeholder="Ex. Customer Name"
+        #input
+      /> </mat-form-field
+  ></mat-grid-tile>
+  <mat-grid-tile>
+    <div class="example-button-row" style="float: right">
+      <button mat-fab extended color="primary">USA</button>
+      <button mat-fab extended color="primary">Canada</button>
+      <button mat-fab extended color="primary">UK</button>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-tab-group>
+  <mat-tab label="Basic Profile">
+
+    <mat-card color="none">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span class="example-spacer"></span>
+          <div class="example-button-row">
+            <button mat-fab extended color="primary">
+              Edit
+              <mat-icon>edit</mat-icon>
+            </button>
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <mat-card-content>
+        
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Favorite food</mat-label>
+            <input matInput placeholder="Ex. Pizza" value="Sushi">
+          </mat-form-field>
+        </form>
+      </mat-card-content>
+    </mat-card>
+    
+
+    
+   
+  </mat-tab>
+
+
+  <mat-tab label="CV"> Content 2 </mat-tab>
+</mat-tab-group>
+
+
